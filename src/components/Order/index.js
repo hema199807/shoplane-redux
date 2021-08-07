@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
+import { Link } from 'react-router-dom'
 import './order.css'
 
-import { addProductToCart } from '../../redux/actions/index'
+import { deleteProduct  } from '../../redux/actions/index'
 
 export class Order extends Component {
 
@@ -15,13 +16,16 @@ export class Order extends Component {
     componentDidMount() {
         window.scrollTo(0, 0)
       }
-    handleOrderPlace =()=>{
-        
+    handleOrderPlace =(cart)=>{
+        const clearCart=cart;
+
         this.setState({onClickCss:"on-click-btn"});
         setTimeout(()=> {
             this.addCss();
         }, 200)
-        
+        clearCart.map((item)=>
+        this.props.deleteProduct(item)
+        )
     }
     addCss=()=>{
         this.setState({onClickCss:""});
@@ -63,9 +67,9 @@ export class Order extends Component {
                     <div>
                         <h3 className="section-heading">Total Amount</h3>
                         <p>Amount: Rs<span id="total-amount">{amount}</span></p>
-                        <a  href="/confirm">
-                        <button id="btn-place-order" onClick={()=>this.handleOrderPlace()} className={onClickCss}>Place Order</button>
-                        </a> 
+                        <Link  to="/confirm">
+                        <button id="btn-place-order" onClick={()=>this.handleOrderPlace(cart)} className={onClickCss}>Place Order</button>
+                        </Link> 
                     </div>
                 </div>
             </section>
@@ -79,7 +83,7 @@ const mapStateToProps = (state) => ({
 })
 
 const mapDispatchToProps = (dispatch)=> ({
-    addProductToCart : (payload) => dispatch(addProductToCart(payload)),
+    deleteProduct : (payload) => dispatch(deleteProduct(payload)),
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(Order)

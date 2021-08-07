@@ -1,0 +1,131 @@
+#main-section {
+    padding: 1% 8%;
+    box-sizing: border-box;
+}
+
+#main-heading {
+    font-size: 36px;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 48px;
+    color: orangered;
+}
+
+#content-wrapper {
+    display: flex;
+    justify-content: start;
+}
+
+#content-wrapper > div:first-of-type {
+    width: 50%;
+}
+
+#content-wrapper > div:last-of-type {
+    width: 50%;
+    height: fit-content;
+    margin-top: 48px;
+    margin-left: 3%;
+
+    box-sizing: border-box;
+    box-shadow: 0 2px 5px #ccc;
+    border-radius: 5px;
+    padding: 16px;
+}
+
+.checkout-card {
+    display: flex;
+    box-sizing: border-box;
+    box-shadow: 0 2px 5px #ccc;
+    border-radius: 10px;
+    background-color: white;
+    max-width: 600px;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+.checkout-product-img {
+    width: 80px;
+    min-width: 80px;
+    border-radius: 5px;
+    margin-right: 16px;
+}
+
+.checkout-card h4 {
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 4px;
+    font-size: 18px;
+}
+
+.checkout-card p {
+    margin: 0;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.section-heading {
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+#total-amount {
+    color: black;
+    opacity: 0.8;
+    font-size: 24px;
+    font-weight: 800;
+    margin-left: 4px;
+}
+
+#btn-place-order{ 
+    background-color: cadetblue;
+    font-size: 18px;
+    border: 0;
+    cursor: pointer;
+    outline: none;
+    padding: 15px 30px;
+    border-radius: 6px;
+    margin-top: 36px;
+    font-weight: 600;
+    color: white;
+}
+.on-click-btn{
+    transform: scale(1,1);
+    animation-name: clickcss;
+    animation-duration: 1s;
+}
+@keyframes clickcss {
+    0%{
+        transform: scale(1,1);
+    }
+    50%{
+        transform: scale(1.1,1.1);
+    }
+    100%{
+        transform: scale(1,1);
+    }
+}
+@media (max-width:425px){
+    #main-heading {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+    .section-heading {
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .checkout-card{
+        flex-direction: column;
+    }
+    #total-amount{
+        font-size: 20px;
+    }
+    #btn-place-order{
+        margin-top: 10px;
+        margin-left:0px;
+        padding:10px 5px;
+        font-size: 16px;
+    }
+}

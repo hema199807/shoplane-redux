@@ -1,0 +1,46 @@
+#main-div{
+    margin-top:29%;
+    text-align: center;
+}
+
+#confirmation-image{
+    /* margin:10% 25% 0 25%; */
+    width:40%;
+    transform:translate(-50vw,-50vh);
+    /* position:relative; */
+    animation-name:imgAcceleration;
+    animation-duration:5s;
+    /* animation-delay:2s; */
+    animation-iteration-count: infinite;
+    animation-fill-mode:forwards;
+    animation-timing-function: ease-in-out;
+}
+@keyframes imgAcceleration{
+    0%{
+        transform:translateY(-5vh);
+    }
+    50%{
+        transform:translateY(0vh);
+    }
+    100%{
+        transform:translateY(-5vh);
+    }
+}
+ 
+
+@media (max-width:425px){
+    #main-div {
+        margin-top: 31%;
+    }
+}
+
+@media (min-width:600px){
+    #main-div {
+        margin-top: 15%;
+    }
+}
+@media (min-width:991px){
+    #main-div {
+        margin-top: 10%;
+    }
+}

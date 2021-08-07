@@ -1,0 +1,48 @@
+a{
+    text-decoration: none;
+}
+.cards-section-heading {
+    margin-top:5%;
+    margin-left: 7%;
+    font-size: 25px;
+    font-weight: 600;
+    color:darkslateblue;
+}
+.card{
+    display: flex;
+    width:15%;
+    max-width:200px;
+    height:450px;
+    box-shadow: 0 0 2px #ccc;
+}
+.card:hover{
+    box-shadow: 0 0 15px gray;
+}
+.card-wrapper{
+    padding:0 4%;
+}
+.product-card-title{
+    font-weight: 600;
+    margin: 0;
+    font-size: 16px;
+    color:darkslategray;
+}
+.product-card-brand{
+    font-weight: 600;
+    opacity: 0.8;
+    margin: 0;
+    font-size:14px;
+    margin-top: 12px;
+    color:black;
+}
+.prouct-card-cost{
+    margin: 0;
+    margin-top: 12px;
+    font-weight: 600;
+    color: #009688;
+}
+@media (max-width:425px){
+    .section-heading {
+        font-size: 20px;
+    }
+}

@@ -2,10 +2,11 @@ import axios from 'axios'
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { getProduct } from '../../redux/actions/index'
-import Cards from '../Cards'
+import Accessories from '../Accessories'
 import Banner from '../Banner'
 import loader from './loader/preloader.gif'
 import '../Cards/card.css'
+import Clothing from '../Clothing/index'
 
 
 export class Home extends Component {
@@ -49,28 +50,11 @@ export class Home extends Component {
             <div>
                 { loading=== true ?<div id="loading-div"><img src={loader}/></div>:<>
                 <Banner searchValue={searchValue} handleSearchValue={this.setSearchValue}/>
-                {/* <h1>Home-{name}-{age}-{address}</h1> */}
+              
              
-                <section className="cards-section" id={cSectionId}>
-                <h3 className="cards-section-heading">Clothing for Men and Women</h3>
-                <div className="d-flex flex-wrap justify-content-center card-wrapper">
-                {products.length !==0 ? products.map((item)=> {
-                   if(item.isAccessory===false){
-                    return <Cards {...item}/>
-                   }
-                }):<h6 style={{color:"red"}}>Product Not Found</h6>}
-                </div>
-                </section>
-                <section className="cards-section" id={aSectionId}>
-                <h3 className="cards-section-heading">Accessories for Men and Women</h3>
-                <div className="d-flex flex-wrap justify-content-center card-wrapper">
-                {products.length !==0 ? products.map((item)=> {
-                   if(item.isAccessory===true){
-                    return <Cards {...item}/>
-                   }
-                }):<h6 style={{color:"red"}}>Product Not Found</h6>}
-                </div>
-                </section>
+                <Clothing />
+                <Accessories />
+                
                 </>}
             </div>
         )

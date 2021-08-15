@@ -30,8 +30,8 @@ export class Navbar extends Component {
                         <div id="sidebar" className={sideBarOpen}>
                             <i className="fas fa-times" style={{fontSize: 18 +"px", color:"red", marginLeft:161+"px"}} onClick={this.sidebarclose} ></i>
                             <Link to="/" id="sidebarHome" onClick={this.sidebarclose} >Home</Link>
-                            <Link to="/#clothing-section" id="sidebartopbar-clothing" onClick={this.sidebarclose} >Clothing</Link>
-                            <Link to="/#accessories-section" id="sidebartopbar-accessories"  onClick={this.sidebarclose} >Accessories</Link>
+                            <Link to="/clothing-section" id="sidebartopbar-clothing" onClick={this.sidebarclose} >Clothing</Link>
+                            <Link to="/accessories-section" id="sidebartopbar-accessories"  onClick={this.sidebarclose} >Accessories</Link>
                             
                         </div>
                         
@@ -41,11 +41,11 @@ export class Navbar extends Component {
                                     <Link to="/" className="nav-link home" aria-current="page">Home</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link to={`/#${cSectionId}`} className="nav-link">Clothing</Link>
+                                    <Link to={`/${cSectionId}`} className="nav-link">Clothing</Link>
                                 </li>
         
                                 <li className="nav-item">
-                                    <Link to={`/#${aSectionId}`}  className="nav-link" tabindex="-1" aria-disabled="true">Accessories</Link>
+                                    <Link to={`/${aSectionId}`}  className="nav-link" tabindex="-1" aria-disabled="true">Accessories</Link>
                                 </li>
                             </ul>
                             

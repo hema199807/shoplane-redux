@@ -7,6 +7,8 @@ import Order from './components/Order/index';
 import Confirmation from './components/confirmation/index';
 import Footer from './components/footer/index';
 import './App.css';
+import Clothing from './components/Clothing';
+import Accessories from './components/Accessories';
 
 const App = () => {
   return ( 
@@ -14,6 +16,8 @@ const App = () => {
       <Navbar />
       <Switch>
         <Route path="/" exact component={Home} />
+         <Route path="/clothing-section" component={Clothing} />
+        <Route path="/accessories-section" component={Accessories} />
         <Route path="/details/:id" component={Details} />
         <Route path="/order" component={Order} />
         <Route path="/confirm" component={Confirmation} />

@@ -19,8 +19,8 @@ export class Navbar extends Component {
         this.setState({sideBarOpen:"sideBarClose"})
     }
     render() {
-        const {sectionId,cart}=this.props;
-        const {cSectionId="", aSectionId=""}=sectionId;
+        const {cart}=this.props;
+      
         const {sideBarOpen}= this.state;
         return (
             <div id="topbar-navigation">
@@ -41,11 +41,11 @@ export class Navbar extends Component {
                                     <Link to="/" className="nav-link home" aria-current="page">Home</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link to={`/${cSectionId}`} className="nav-link">Clothing</Link>
+                                    <Link to="/clothing-section" className="nav-link">Clothing</Link>
                                 </li>
         
                                 <li className="nav-item">
-                                    <Link to={`/${aSectionId}`}  className="nav-link" tabindex="-1" aria-disabled="true">Accessories</Link>
+                                    <Link to="/accessories-section"  className="nav-link" tabindex="-1" aria-disabled="true">Accessories</Link>
                                 </li>
                             </ul>
                             
@@ -70,8 +70,7 @@ export class Navbar extends Component {
 }
 
 const mapStateToProps = (state) => ({
-    sectionId :state.sectionReducer.sectionId,
-    cart:state.productReducer.cart
+    cart:state.cart,
 })
 
 // const mapDispatchToProps = {

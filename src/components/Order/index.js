@@ -79,7 +79,7 @@ export class Order extends Component {
 }
 
 const mapStateToProps = (state) => ({
-    cart:state.productReducer.cart
+    cart:state.cart
 })
 
 const mapDispatchToProps = (dispatch)=> ({

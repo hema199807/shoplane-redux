@@ -89,7 +89,7 @@ export class Details extends Component {
 }
 
 const mapStateToProps = (state) => ({
-   cart:state.productReducer.cart 
+   cart:state.cart 
     
 })
 

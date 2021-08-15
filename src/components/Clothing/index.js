@@ -23,7 +23,7 @@ export class Clothing extends Component {
 }
 
 const mapStateToProps = (state) => ({
-    products : state.productReducer.products
+    products : state.products
 })
 
 // const mapDispatchToProps = {

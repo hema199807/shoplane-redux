@@ -43,8 +43,7 @@ export class Home extends Component {
     }
     
     render() {
-        const {products,sectionId}=this.props;
-         const {cSectionId="", aSectionId=""}=sectionId;
+        
         const {searchValue,loading}=this.state;
         return (
             <div>
@@ -62,8 +61,7 @@ export class Home extends Component {
 }
 
 const mapStateToProps = (state) => ({
-    sectionId :state.sectionReducer.sectionId,
-    products : state.productReducer.products
+    products : state.products,
 })
 
 const mapDispatchToProps = (dispatch)=> ({

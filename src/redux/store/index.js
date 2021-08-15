@@ -1,11 +1,6 @@
-import productReducer from "../reducers/productReducer";
-import sectionReducer from "../reducers/sectionReducer";
-import { combineReducers, createStore } from "redux";
+import { createStore } from "redux";
+import reducer from "../reducers";
 
-const rootReducer = combineReducers({
-    productReducer,
-    sectionReducer
-})
-const store= createStore(rootReducer)
+const store= createStore(reducer)
 
 export default store;

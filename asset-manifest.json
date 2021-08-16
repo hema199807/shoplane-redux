@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/shoplane-redux/static/css/main.3f54f99a.chunk.css",
-    "main.js": "/shoplane-redux/static/js/main.ba5a9c3b.chunk.js",
-    "main.js.map": "/shoplane-redux/static/js/main.ba5a9c3b.chunk.js.map",
+    "main.css": "/shoplane-redux/static/css/main.d417144a.chunk.css",
+    "main.js": "/shoplane-redux/static/js/main.cccb61a8.chunk.js",
+    "main.js.map": "/shoplane-redux/static/js/main.cccb61a8.chunk.js.map",
     "runtime-main.js": "/shoplane-redux/static/js/runtime-main.415fe060.js",
     "runtime-main.js.map": "/shoplane-redux/static/js/runtime-main.415fe060.js.map",
     "static/css/2.ed1298f3.chunk.css": "/shoplane-redux/static/css/2.ed1298f3.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.3f3a79a4.chunk.js.map": "/shoplane-redux/static/js/3.3f3a79a4.chunk.js.map",
     "index.html": "/shoplane-redux/index.html",
     "static/css/2.ed1298f3.chunk.css.map": "/shoplane-redux/static/css/2.ed1298f3.chunk.css.map",
-    "static/css/main.3f54f99a.chunk.css.map": "/shoplane-redux/static/css/main.3f54f99a.chunk.css.map",
+    "static/css/main.d417144a.chunk.css.map": "/shoplane-redux/static/css/main.d417144a.chunk.css.map",
     "static/js/2.9d37c152.chunk.js.LICENSE.txt": "/shoplane-redux/static/js/2.9d37c152.chunk.js.LICENSE.txt",
     "static/media/img1.9007d84c.png": "/shoplane-redux/static/media/img1.9007d84c.png",
     "static/media/img2.88dc38c8.png": "/shoplane-redux/static/media/img2.88dc38c8.png",
@@ -23,7 +23,7 @@
     "static/js/runtime-main.415fe060.js",
     "static/css/2.ed1298f3.chunk.css",
     "static/js/2.9d37c152.chunk.js",
-    "static/css/main.3f54f99a.chunk.css",
-    "static/js/main.ba5a9c3b.chunk.js"
+    "static/css/main.d417144a.chunk.css",
+    "static/js/main.cccb61a8.chunk.js"
   ]
 }
